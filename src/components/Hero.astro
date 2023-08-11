@@ -1,0 +1,24 @@
+---
+import "../styles/skills.scss";
+import Cv from "./Cv.astro";
+import Planet from "./Planet.astro";
+---
+
+<section class="heroContainer my-container">
+  <div class="leftHero">
+    <div class="profileContainer">
+      <img src="./assets/images/photoE.png" alt="elias image" />
+    </div>
+    <div class="descriptionContainer">
+      <img class="arrow" src="./assets/images/Arrow.png" alt="arrow" />
+      <div class="textContainer">
+        <p class="wText">
+          Hi, i am <span class="gText">Elias Magnoli</span>
+          <span class="lgText">Front-end Developer</span>
+        </p>
+          <Cv />
+      </div>
+    </div>
+  </div>
+  <Planet />
+</section>

@@ -1,0 +1,205 @@
+---
+---
+
+<!-- SPINNER ORBITS -->
+<div class="spinner-box">
+  <div class="blue-orbit leo"></div>
+
+  <div class="green-orbit leo"></div>
+
+  <div class="red-orbit leo"></div>
+
+  <div class="white-orbit w1 leo"></div><div class="white-orbit w2 leo">
+  </div><div class="white-orbit w3 leo"></div>
+</div>
+
+<style lang="scss">
+  /* KEYFRAMES */
+  @import "../styles/mixins.scss";
+
+  @keyframes spin {
+    from {
+      transform: rotate(0);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+  @keyframes spin3D {
+    from {
+      transform: rotate3d(0.8, 0.8, 0.8, 360deg);
+    }
+    to {
+      transform: rotate3d(0deg);
+    }
+  }
+
+  @keyframes spin3D {
+    0% {
+      opacity: 0;
+      transform: rotate3d(0.8, 0.8, 0.8, 360deg);
+    }
+    50% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+      transform: rotate3d(0deg);
+    }
+  }
+
+  @keyframes configure-clockwise {
+    0% {
+      transform: rotate(0);
+    }
+    25% {
+      transform: rotate(90deg);
+    }
+    50% {
+      transform: rotate(180deg);
+    }
+    75% {
+      transform: rotate(270deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes configure-xclockwise {
+    0% {
+      transform: rotate(45deg);
+    }
+    25% {
+      transform: rotate(-45deg);
+    }
+    50% {
+      transform: rotate(-135deg);
+    }
+    75% {
+      transform: rotate(-225deg);
+    }
+    100% {
+      transform: rotate(-315deg);
+    }
+  }
+
+  @keyframes pulse {
+    from {
+      opacity: 1;
+      transform: scale(1);
+    }
+    to {
+      opacity: 0.25;
+      transform: scale(0.75);
+    }
+  }
+
+  /* GRID STYLING */
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .spinner-box {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    position: relative;
+    bottom: 3rem;
+    right: 5rem;
+
+    @include large(1060px) {
+      bottom: -3rem;
+      left: -4rem;
+    }
+
+    @include medium(700px) {
+      bottom: -3rem;
+      left: -15rem;
+    }
+
+    @include small(600px) {
+      display: none;
+    }
+
+  }
+
+  .leo {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+
+  .blue-orbit {
+    width: 365px;
+    height: 365px;
+    border: 1px solid #91daffa5;
+    -webkit-animation: spin3D 5s linear 0.7s infinite;
+    @include medium(700px) {
+      width: 65px;
+      height: 65px;
+    }
+  }
+
+  .green-orbit {
+    width: 320px;
+    height: 320px;
+    border: 1px solid #91ffbfa5;
+    -webkit-animation: spin3D 5s linear 0s infinite;
+    @include medium(700px) {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .red-orbit {
+    width: 290px;
+    height: 290px;
+    border: 1px solid #0d9223a5;
+    -webkit-animation: spin3D 4s linear 0s infinite;
+    @include medium(700px) {
+      width: 90px;
+      height: 90px;
+    }
+  }
+
+  .white-orbit {
+    width: 190px;
+    height: 190px;
+    border: 1px solid #0f551ea5;
+    -webkit-animation: spin3D 4s linear 0s infinite;
+    @include medium(700px) {
+      width: 90px;
+      height: 90px;
+    }
+  }
+
+  .w1 {
+    transform: rotate3D(1, 1, 1, 90deg);
+  }
+
+  .w2 {
+    transform: rotate3D(1, 2, 0.5, 90deg);
+  }
+
+  .w3 {
+    transform: rotate3D(1, 1, 2, 90deg);
+  }
+
+  .three-quarter-spinner {
+    width: 50px;
+    height: 50px;
+    border: 3px solid #fb5b53;
+    border-top: 3px solid transparent;
+    border-radius: 50%;
+    animation: spin 0.5s linear 0s infinite;
+  }
+</style>

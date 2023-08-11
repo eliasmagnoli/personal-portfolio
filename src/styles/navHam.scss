@@ -1,0 +1,36 @@
+@import "./variables.scss";
+
+.navCelContainer{
+  opacity: 1;
+  transition: .3s ease all;
+  position: absolute;
+  z-index: 10000000;
+  background-color: #1c1c1c;
+  width: 100%;
+  height: 100vh;
+@include cel(600px) {
+  display:none;
+}
+  .menuLinkCel {
+    color: $main-color;
+    border-bottom: 1px solid $main-color;
+    padding: 1rem 4rem;
+  }
+  .navCelHam{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    gap: 8rem;
+    flex-direction: column;
+  }
+  .btnContactCel{
+    color: $main-color;
+    border-bottom: 1px solid $main-color;
+    padding: 1rem 4rem;
+  }
+}
+
+.visible{
+  opacity: 0;
+}

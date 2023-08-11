@@ -1,0 +1,92 @@
+.footerContainer{
+  margin-top: 18rem;
+  background-color: #101010;
+  position: relative;
+
+  .footerLinks{
+    .linksContainer{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      margin-top: .5rem;
+    }
+    .emailTel{
+      margin-top: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+     
+    }
+    .copyright{
+      display: flex;
+      justify-content: center;
+      margin-top: 1rem;
+      .copy{
+      font-size: 14px;
+      @include small(600px) {
+        font-size: 12px;
+      }
+      @include small(445px) {
+        font-size: 10px;
+      }
+      span{
+        font-weight: 600;
+      }
+      
+      }
+    }
+  }
+}
+
+.gitPht{
+  @include small(600px) {
+    width: 20px;
+  }
+}
+.inPht{
+  @include small(600px) {
+    width: 20px;
+  }
+}
+
+.tel{
+  @include small(600px) {
+    font-size: 14px;
+  }
+  @include small(445px) {
+    font-size: 12px;
+  }
+  @include small(385px) {
+    font-size: 10px;
+  }
+  
+}
+.mail{
+  @include small(600px) {
+    font-size: 14px;
+  }
+  @include small(445px) {
+    font-size: 12px;
+  }
+  @include small(385px) {
+    font-size: 10px;
+  }
+}
+.mailPht{
+  @include small(600px) {
+    width: 18px;
+  }
+  @include small(385px) {
+    width: 14px;
+  }
+}
+.telPht{
+  @include small(600px) {
+    width: 20px;
+  }
+  @include small(385px) {
+    width: 16px;
+  }
+}

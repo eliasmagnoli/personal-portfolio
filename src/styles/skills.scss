@@ -1,0 +1,643 @@
+@import "./variables.scss";
+
+.textLight{
+  border: 2px solid #101010;
+}
+
+.skillsContainer{
+  position: relative;
+  max-width: 1200px;
+ .skillsTitle{
+  margin-top: 15%;
+  margin-bottom: 1%;
+  font-size: 22px;
+  font-weight: 600;
+ }
+ .skillsTitleLear{
+  margin-top: -15%;
+  margin-bottom: 1%;
+  font-size: 22px;
+  font-weight: 600;
+ }
+ .technologies{
+  flex-wrap: wrap;
+  margin-bottom: 20rem;
+  gap: 7rem 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  margin-top: 3rem;
+  .skills{
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    transition: .2s all ease;
+
+    &:hover{
+    transition: .2s all ease;
+    }
+  }
+ }
+
+ //HTML
+ .notiContainer{
+  position: relative;
+  
+ }
+ .notiImg{
+  position: absolute;
+  left: 6%;
+  top: 160%;
+  bottom: -10%;
+
+  .imgNoti{
+    position: absolute;
+    width: 70px;
+    padding: 10px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease all;
+    transform: translateY(30px);
+  }
+ }
+ .html:hover{
+  background: #ff5722;
+  border: 2px solid transparent;
+ }
+  
+ .notiContainer:hover .imgNoti{
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+ //Css
+ .notiContainerCss{
+  position: relative;
+ }
+
+ .notiImgCss{
+  position: absolute;
+  left: -4%;
+  top: 160%;
+  bottom: -10%;
+ }
+
+ .imgNotiCss{
+  position: absolute;
+  width: 70px;
+  padding: 10px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease all;
+  transform: translateY(30px);
+}
+
+ .css:hover{
+  background: #2196f3;
+  border: 2px solid transparent;
+ }
+
+ .notiContainerCss:hover .imgNotiCss{
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+//Sass
+.notiContainerSass{
+  position: relative;
+ }
+
+ .notiImgSass{
+  position: absolute;
+  left: -2%;
+  top: 160%;
+  bottom: -10%;
+ }
+
+ .imgNotiSass{
+  position: absolute;
+  width: 70px;
+  padding: 10px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease all;
+  transform: translateY(30px);
+}
+
+ .sass:hover{
+  background: #cf649a;
+  border: 2px solid transparent;
+ }
+
+ .notiContainerSass:hover .imgNotiSass{
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+//Figma
+.notiContainerFigma{
+  position: relative;
+ }
+
+ .notiImgFigma{
+  position: absolute;
+  left: 7%;
+  top: 160%;
+  bottom: -10%;
+ }
+
+ .imgNotiFigma{
+  position: absolute;
+  width: 70px;
+  padding: 10px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease all;
+  transform: translateY(30px);
+}
+
+ .figma:hover{
+  background: #3c5156;
+  border: 2px solid transparent;
+ }
+
+ .notiContainerFigma:hover .imgNotiFigma{
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+//Bootstrap
+.notiContainerBoot{
+  position: relative;
+ }
+
+ .notiImgBoot{
+  position: absolute;
+  left: 18%;
+  top: 160%;
+  bottom: -10%;
+ }
+
+ .imgNotiBoot{
+  position: absolute;
+  width: 70px;
+  padding: 10px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease all;
+  transform: translateY(30px);
+}
+
+ .boot:hover{
+  background: #563d7c;
+  border: 2px solid transparent;
+ }
+
+ .notiContainerBoot:hover .imgNotiBoot{
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+//MUI
+.notiContainerMui{
+  position: relative;
+ }
+
+ .notiImgMui{
+  position: absolute;
+  left: 18%;
+  top: 160%;
+  bottom: -10%;
+ }
+
+ .imgNotiMui{
+  position: absolute;
+  width: 70px;
+  padding: 10px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease all;
+  transform: translateY(30px);
+}
+
+ .mui:hover{
+  background: #0081cb;
+  border: 2px solid transparent;
+ }
+
+ .notiContainerMui:hover .imgNotiMui{
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+//Vite
+.notiContainerVite{
+  position: relative;
+ }
+
+ .notiImgVite{
+  position: absolute;
+  left: -4%;
+  top: 160%;
+  bottom: -10%;
+ }
+
+ .imgNotiVite{
+  position: absolute;
+  width: 70px;
+  padding: 10px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease all;
+  transform: translateY(30px);
+}
+
+ .vite:hover{
+  background: #8831ff;
+  border: 2px solid transparent;
+ }
+
+ .notiContainerVite:hover .imgNotiVite{
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+//JS
+.notiContainerJs{
+  position: relative;
+ }
+
+ .notiImgJs{
+  position: absolute;
+  left: 17%;
+  top: 160%;
+  bottom: -10%;
+ }
+
+ .imgNotiJs{
+  position: absolute;
+  width: 70px;
+  padding: 10px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease all;
+  transform: translateY(30px);
+}
+
+ .js:hover{
+  background: #f7df1e;
+  border: 2px solid transparent;
+  color: #000000;
+ }
+
+ .notiContainerJs:hover .imgNotiJs{
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+//React
+.notiContainerReact{
+  position: relative;
+ }
+
+ .notiImgReact{
+  position: absolute;
+  left: 6%;
+  top: 160%;
+  bottom: -10%;
+ }
+
+ .imgNotiReact{
+  position: absolute;
+  width: 70px;
+  padding: 10px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease all;
+  transform: translateY(30px);
+}
+
+ .react:hover{
+  background: #00bfff;
+  border: 2px solid transparent;
+ }
+
+ .notiContainerReact:hover .imgNotiReact{
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+//Git
+.notiContainerGit{
+  position: relative;
+ }
+
+ .notiImgGit{
+  position: absolute;
+  left: -11%;
+  top: 160%;
+  bottom: -10%;
+ }
+
+ .imgNotiGit{
+  position: absolute;
+  width: 70px;
+  padding: 10px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease all;
+  transform: translateY(30px);
+}
+
+ .git:hover{
+  background: #ee513b;
+  border: 2px solid transparent;
+ }
+
+ .notiContainerGit:hover .imgNotiGit{
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+//Github
+.notiContainerGithub{
+  position: relative;
+ }
+
+ .notiImgGithub{
+  position: absolute;
+  left: 8%;
+  top: 160%;
+  bottom: -10%;
+ }
+
+ .imgNotiGithub{
+  position: absolute;
+  width: 70px;
+  padding: 10px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease all;
+  transform: translateY(30px);
+}
+
+ .github:hover{
+  background: #24292e;
+  border: 2px solid transparent;
+ }
+
+ .notiContainerGithub:hover .imgNotiGithub{
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+//VSC
+.notiContainerVsc{
+  position: relative;
+ }
+
+ .notiImgVsc{
+  position: absolute;
+  left: -1%;
+  top: 160%;
+  bottom: -10%;
+ }
+
+ .imgNotiVsc{
+  position: absolute;
+  width: 70px;
+  padding: 10px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease all;
+  transform: translateY(30px);
+}
+
+ .vsc:hover{
+  background: #0075b7;
+  border: 2px solid transparent;
+ }
+
+ .notiContainerVsc:hover .imgNotiVsc{
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+//Astro
+.notiContainerAstro{
+  position: relative;
+ }
+
+ .notiImgAstro{
+  position: absolute;
+  left: 3%;
+  top: 160%;
+  bottom: -10%;
+ }
+
+ .imgNotiAstro{
+  position: absolute;
+  width: 70px;
+  padding: 10px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease all;
+  transform: translateY(30px);
+}
+
+ .astro:hover{
+  background: #ff5d01;
+  border: 2px solid transparent;
+ }
+
+ .notiContainerAstro:hover .imgNotiAstro{
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+//Linux
+.notiContainerLinux{
+  position: relative;
+ }
+
+ .notiImgLinux{
+  position: absolute;
+  left: 2%;
+  top: 160%;
+  bottom: -10%;
+ }
+
+ .imgNotiLinux{
+  position: absolute;
+  width: 70px;
+  padding: 10px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease all;
+  transform: translateY(30px);
+}
+
+ .linux:hover{
+  background: #f8bf11;
+  border: 2px solid transparent;
+  color: #101010;
+ }
+
+ .notiContainerLinux:hover .imgNotiLinux{
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+//Bash
+.notiContainerBash{
+  position: relative;
+ }
+
+ .notiImgBash{
+  position: absolute;
+  left: 2%;
+  top: 160%;
+  bottom: -10%;
+ }
+
+ .imgNotiBash{
+  position: absolute;
+  width: 70px;
+  padding: 10px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease all;
+  transform: translateY(30px);
+}
+
+ .bash:hover{
+  background: #2f3a3e;
+  border: 2px solid transparent;
+ }
+
+ .notiContainerBash:hover .imgNotiBash{
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.skills{
+  cursor: pointer;
+}
+
+
+//Learning
+//NODE
+.notiContainerNode{
+  position: relative;
+ }
+
+ .notiImgNode{
+  position: absolute;
+  left: 12%;
+  top: 160%;
+  bottom: -10%;
+ }
+
+ .imgNotiNode{
+  position: absolute;
+  width: 70px;
+  padding: 10px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease all;
+  transform: translateY(30px);
+}
+
+ .node:hover{
+  background: #539e43;
+  border: 2px solid transparent;
+ }
+
+ .notiContainerNode:hover .imgNotiNode{
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+//TS
+.notiContainerTs{
+  position: relative;
+ }
+
+ .notiImgTs{
+  position: absolute;
+  left: 18%;
+  top: 160%;
+  bottom: -10%;
+ }
+
+ .imgNotiTs{
+  position: absolute;
+  width: 70px;
+  padding: 10px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease all;
+  transform: translateY(30px);
+}
+
+ .ts:hover{
+  background: #007acc;
+  border: 2px solid transparent;
+ }
+
+ .notiContainerTs:hover .imgNotiTs{
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+//C
+.notiContainerC{
+  position: relative;
+ }
+
+ .notiImgC{
+  position: absolute;
+  left: -24%;
+  top: 160%;
+  bottom: -10%;
+ }
+
+ .imgNotiC{
+  position: absolute;
+  width: 70px;
+  padding: 10px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease all;
+  transform: translateY(30px);
+}
+
+ .c:hover{
+  background: #7f8b99;
+  border: 2px solid transparent;
+ }
+
+ .notiContainerC:hover .imgNotiC{
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0px);
+}
+}

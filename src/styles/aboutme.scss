@@ -1,0 +1,119 @@
+.aboutMeContainer{
+  margin-top: 3rem;
+  h3{
+    margin-top: 2rem;
+    font-size: 22px;
+    
+    font-weight: 600;
+  }
+  p{
+    margin-top: .8rem;
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 1rem;
+  }
+  .softSkills{
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 2rem;
+    @include small(370px) {
+      font-size: 5;
+      flex-flow: row;
+      }
+    .soft{
+      position: relative;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      bottom: 1rem;
+      @include small(370px) {
+        font-size: 12px;
+        flex-flow: row;
+        }
+      @include medium(890px) {
+        display: flex;
+        position: relative;
+        bottom: 2.4rem;
+        left: 1.7rem;
+      }
+    }
+    @include medium(985px) {
+      position: relative;
+      padding-left: 1rem;
+      display: flex;
+      flex-direction: row;
+    @include small(382px) {
+      padding-left: 0rem;
+      }
+    }
+    @include small(900px) {
+      display: flex;
+      flex-direction: row;
+    }
+    @include medium(985px) {
+      gap: 1.5rem;
+    }
+    
+    .respImprov{
+      display: flex;
+      gap: 1rem;
+      @include medium(890px) {
+        display: flex;
+        flex-direction: column;
+      }
+      @include medium(890px) {
+      padding: 1rem;
+      gap: .1rem;
+    }
+    }
+    .teamCurious{
+      display: flex;
+      gap: 1rem;
+      @include medium(890px) {
+        display: flex;
+        flex-direction: column;
+        gap: .1rem;
+      }
+    }
+  }
+
+  .languages{
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    position: relative;
+    right: 2.5rem;
+    bottom: 3.5rem;
+    flex-flow: row wrap;
+    @include medium(890px) {
+      display: flex;
+      position: relative;
+      bottom: 12.5rem;
+    }
+    
+    @include small(510px) {
+      padding: .5rem 1rem;
+      border-radius: 1.8rem;
+      font-size: 12px;
+      display: flex;
+      flex-direction: column;
+      margin-left: 5%;
+      margin-top: 50%;
+      margin-bottom: -40%;
+      }
+    .country{
+      transition: .3s ease all;
+      width: 30px;
+      @include large(985px) {
+        width: 25px;
+      }
+      
+      &:hover{
+        transform: scale(1.2);
+      }
+    }
+  }
+}

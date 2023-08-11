@@ -1,0 +1,47 @@
+@import "./variables.scss";
+
+.projectsContainer{
+  max-width: 1200px;
+  .projectsTitle{
+    font-size: 22px;
+    font-weight: 600;
+    display: flex;
+    justify-content: end;
+    margin-bottom: 1%;
+    margin-top: -5%;
+  }
+  .projectsText{
+    display: flex;
+    justify-content: end;
+  }
+  .cardsProjects{
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+  .allProjects{
+    color: #ecf39e;
+    background: transparent;
+    border: 2px solid #ecf39e;
+    padding: .8rem 1.6rem;
+    border-radius: 1.8rem;
+    transition: .2s ease all;
+    &:hover{
+      background: #588157;
+    }
+    @include small(600px) {
+    padding: .5rem 1rem;
+    border-radius: 1.8rem;
+    font-size: 12px;
+    }
+  }
+  .allContainer{
+    margin-bottom: 3%;
+    margin-left: 5%;
+  }
+}

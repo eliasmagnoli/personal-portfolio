@@ -1,0 +1,111 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+// .headerContainer{
+//   background: white;
+// }
+.navBar {
+  position: fixed;
+  width: 100%;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  z-index: 9999999;
+  max-width: 1200px;
+  justify-content: space-between;
+  ul {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    text-decoration: none;
+    font-weight: 700;
+    margin-top: 1rem;
+    @include large(785px) {
+      font-size: 14px;
+      gap: 1rem;
+      display: flex;
+    }
+
+    span {
+      background: $main-color;
+      color: $white;
+      padding: 0.7rem 1.2rem;
+      border-radius: 1.8rem;
+      &:hover {
+        outline: 2px solid $white;
+        padding: 0.7rem 1.2rem;
+        border-radius: 1.8rem;
+        transition: 0.8s ease all;
+        background: none;
+      }
+      @include small(600px) {
+        display: none;
+      }
+    }
+
+    .one,
+    .two,
+    .three {
+      @include small(600px) {
+        display: none;
+      }
+      outline: 2px solid transparent;
+      padding: 0.7rem 1.2rem;
+      border-radius: 1.8rem;
+      
+      &:hover {
+        outline: 2px solid $white;
+        padding: 0.7rem 1.2rem;
+        border-radius: 1.8rem;
+        transition: 0.8s ease all;
+        color: $white;
+      }
+    }
+  }
+}
+
+.btmmNav {
+  margin-top: 1rem;
+  position: fixed;
+  width: 100%;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  z-index: 9999999;
+  max-width: 1200px;
+  top: 3.7rem;
+  @include small(600px) {
+    display: none;
+  }
+  @include large(785px) {
+    top: 3.3rem;
+    width: 100%;
+  }
+}
+
+.logoContainer{
+  .elias{
+    font-weight: 700;
+    color: $main-color;
+    position: relative;
+    top: .53rem;
+    margin-left: 7rem;
+    @include large(785px) {
+      font-size: 14px;
+      margin-left: 2rem;
+    }
+    @include small(600px){
+      margin-left: 3.5rem;
+      top: 1rem;
+    }
+
+    .dot{
+      color: white;
+      padding-left: 2px;
+    }
+  }
+  
+}
+
+.menuLink {
+  color: $main-color;
+}

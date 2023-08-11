@@ -1,0 +1,33 @@
+---
+import "../styles/nav.scss";
+import Button from "../components/Button.astro";
+import Hamburger from "./Hamburger.astro";
+---
+
+<header class="headerContainer">
+  <section class="blurBg">
+    <div class="my-container">
+      <nav class="navBar">
+        <div class="logoContainer">
+          <a class="logoLink" href="#base"
+            ><p class="elias">Elias Magnoli<span class="dot">.</span></p></a
+          >
+        </div>
+        <div class="container">
+          <ul>
+            <li><a class="menuLink one" href="#aboutme">About me</a></li>
+            <li><a class="menuLink two" href="#skills">Skills</a></li>
+            <li><a class="menuLink three" href="#projects">Projects</a></li>
+            <li>
+              <a class="menuLink" href="#footer"
+                ><span class="btnContact">CONTACT ME</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <hr class="btmmNav" color="#90A955" />
+    </div>
+    <Hamburger/>
+  </section>
+</header>

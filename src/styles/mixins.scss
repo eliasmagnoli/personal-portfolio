@@ -1,0 +1,26 @@
+@mixin small ($medida: 600px){
+  @media only screen and (max-width: $medida) {
+    @content;
+  }
+}
+
+@mixin medium ($medida: 1024px){
+  @media only screen and (max-width: $medida) {
+    @content;
+  }
+}
+
+@mixin large ($medida: 1440px){
+  @media only screen and (max-width: $medida) {
+    @content;
+  }
+}
+
+@mixin cel ($medida: 600px){
+  @media only screen and (min-width: $medida) {
+    @content;
+  }
+}
+
+
+

@@ -1,0 +1,61 @@
+//formater
+@import "./variables.scss";
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  background-image: url("../images/bg-darkmode.png");
+  background-size: cover; 
+  color: $font-subtitle;
+  scroll-behavior: smooth;
+  
+  overflow-x: hidden;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body{
+  font-family: $font;
+}
+
+.my-container{
+  max-width: 1200px;
+  padding: 1rem;
+  margin: auto;
+}
+
+h1 {
+  font-size: clamp(2rem, 6vw, 4rem);
+}
+
+h2 {
+  font-size: clamp(1.8rem, 5vw, 3.6rem);
+}
+
+h3 {
+  font-size: clamp(1.6rem, 4vw, 3.2rem);
+}
+
+h4 {
+  font-size: clamp(1.4rem, 3vw, 2.8rem);
+}
+
+h5{
+  font-size: clamp(1.2rem, 2vw, 2.4rem);
+}
+
+h6{
+  font-size: clamp(1rem, 1.5vw, 2rem);
+}
+
+p{
+  font-size: clamp(1rem, 1vw, 2rem);
+}
