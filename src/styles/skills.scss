@@ -262,6 +262,7 @@
  .vite:hover{
   background: #8831ff;
   border: 2px solid transparent;
+  color: #ffd22a;
  }
 
  .notiContainerVite:hover .imgNotiVite{
@@ -304,19 +305,19 @@
   transform: translateY(0px);
 }
 
-//React
-.notiContainerReact{
+//Vue.js
+.notiContainerVue{
   position: relative;
  }
 
- .notiImgReact{
+ .notiImgVue{
   position: absolute;
   left: 6%;
   top: 160%;
   bottom: -10%;
  }
 
- .imgNotiReact{
+ .imgNotiVue{
   position: absolute;
   width: 70px;
   padding: 10px;
@@ -326,12 +327,13 @@
   transform: translateY(30px);
 }
 
- .react:hover{
-  background: #00bfff;
+ .vue:hover{
+  background: #2a3541;
   border: 2px solid transparent;
+  color: #4dba87;
  }
 
- .notiContainerReact:hover .imgNotiReact{
+ .notiContainerVue:hover .imgNotiVue{
   visibility: visible;
   opacity: 1;
   transform: translateY(0px);
@@ -528,6 +530,7 @@
  .bash:hover{
   background: #2f3a3e;
   border: 2px solid transparent;
+  color: #3ab14a;
  }
 
  .notiContainerBash:hover .imgNotiBash{
